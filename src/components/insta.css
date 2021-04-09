@@ -1,11 +1,22 @@
-.insta-photo {
-    max-width: 500px;
-    max-height: 250px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
+body {
+    font-family: 'Bungee Shade', cursive;
 }
 
+.heading {
+    text-align: center;
+    padding: 2em 0 0 0;
+}
+
+.insta-photo {
+    max-width: 350px;
+    min-height: 170px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: center;
+}
+h1 {
+    font-size: 5em;
+}
 .insta-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -14,20 +25,26 @@
     grid-row-gap: 2em;
 }
 
+.card-body {
+    min-height: 150px;
+}
+
 .card-text {
     max-height: 200px;
     overflow-y: scroll;
+    overflow: auto;
 }
+
 ::-webkit-scrollbar {
     width: 12px;
 }
- 
+
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
 }
- 
+
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
 }
